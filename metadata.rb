@@ -14,7 +14,7 @@ depends "nginx"
 depends "mysql"
 depends "postgresql"
 # depends "unicorn"
-# depends "puma"
+depends "puma"
 # depends "database"
 
 recipe "rails-stack", "Recipe for provisioning rails server with multiple apps"
