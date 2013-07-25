@@ -93,8 +93,8 @@ end
 
 
 
-# case node['app_server']
-# when "unicorn" then include_recipe "unicorn::monit"
-# when "puma" then include_recipe "puma::puma"
-# end
+case node['app_server']['type']
+when "unicorn" then include_recipe "unicorn::monit"
+when "puma" then include_recipe "puma::puma"
+end
 
